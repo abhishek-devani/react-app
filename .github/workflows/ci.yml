@@ -34,7 +34,7 @@ jobs:
 
       - name: deploy a staging
         if: github.event_name == 'push'
-        run: npm surge --project ./build --domain truculent-bean.surge.sh
+        run: npx surge --project ./build --domain truculent-bean.surge.sh
         env:
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }} 
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
