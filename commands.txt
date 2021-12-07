@@ -1,0 +1,6 @@
+npm start
+npm run build
+surge
+
+npm prettier --check "**/*.js"
+npm prettier --write "**/*.js"
