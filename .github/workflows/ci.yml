@@ -28,7 +28,7 @@ jobs:
 
       - run: npm ci
 
-      - run: npm prettier --write "**/*.js"
+      - run: npx prettier --write "**/*.js"
 
       - run: npm run format:check
 
