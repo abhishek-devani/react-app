@@ -55,7 +55,7 @@ jobs:
       # - run: npm install -g surge
 
       - name: deploy a staging
-        if: github.event_name == 'push' 
+        if: github.event_name == 'push'
         run: npx surge --project ./build --domain truculent-bean.surge.sh
         env:
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }} 
